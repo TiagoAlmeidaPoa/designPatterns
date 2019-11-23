@@ -26,8 +26,8 @@ public class IphoneCentro extends Celular{
 	}
 
 	@Override
-	public String getName() {
-		return "iphone da loja do centro";
+	public void nome() {
+		System.out.println("iphone da loja do centro");
 	}
 
 }

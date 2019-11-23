@@ -47,9 +47,9 @@ public class Iphone extends Celular{
 	}
 
 	@Override
-	public String getName() {
+	public void nome() {
 		// TODO Auto-generated method stub
-		return null;
+		
 	}
 
 }

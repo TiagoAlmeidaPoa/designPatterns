@@ -4,19 +4,18 @@ import br.fundatec.lp3.lojacelulares.celulares.Celular;
 import br.fundatec.lp3.lojacelulares.celulares.Iphone;
 import br.fundatec.lp3.lojacelulares.celulares.Modelo;
 import br.fundatec.lp3.lojacelulares.materialfactory.MaterialFactory;
-import br.fundatec.lp3.lojacelulares.materialfactory.MaterialFactoryCentro;
+import br.fundatec.lp3.lojacelulares.materialfactory.MaterialFactoryIguatemi;
 
-public class LojaCentro extends Loja {
+public class LojaIguatemi extends Loja {
 
 	MaterialFactory materialFactory;
 
-	public LojaCentro() {
-		materialFactory = new MaterialFactoryCentro();
+	public LojaIguatemi() {
+		materialFactory = new MaterialFactoryIguatemi();
 	}
 
 	@Override
 	protected Celular montarCelular(Modelo modelo) {
-
 		switch (modelo) {
 		case IPHONE:
 			return new Iphone(materialFactory);
@@ -27,7 +26,7 @@ public class LojaCentro extends Loja {
 	
 	@Override
 	public String getName() {
-		return "IPHONE DO CENTRO";
+		return "IPHONE DO IGUATEMI";
 	}
 
 }

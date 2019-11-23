@@ -10,6 +10,6 @@ public abstract class Celular {
 	
 	public abstract void embalar();
 	
-	public abstract String getName();
+	public abstract void nome();
 
 }

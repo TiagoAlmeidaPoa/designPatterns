@@ -1,6 +1,6 @@
 package br.fundatec.lp3.lojacelulares.celulares;
 
-public class IphoneIguatemi extends Celular{
+public class IphoneIguatemi extends Celular {
 
 	@Override
 	public void preparar() {
@@ -25,8 +25,8 @@ public class IphoneIguatemi extends Celular{
 	}
 
 	@Override
-	public String getName() {
-		return "iphone da loja do iguatemi";
+	public void nome() {
+		System.out.println("Iphone do Iguatemi");
 	}
 
 }
